@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 1000px;
+    background-color: #4a148c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.disclaimer {
+    text-align: center; /* Text zentrieren */
+    font-size: 18px; /* Kleinere Schriftgröße */
+    color: #bbb; /* Helles Grau für den Disclaimer */
+    margin: 10px 0; /* Etwas Abstand nach oben und unten */
+}
+
+
+#layout-section {
+    width: 1000px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    border-radius: 0 0 25px 25px;
+}
+
+main {
+    background-color: #333333;
+    border-radius: 25px;
+    padding: 0px;  /* Innenabstand (Padding) beibehalten */
+    margin-left: 20px; /* Abstand zum linken Rand (Navi) */
+    margin-right: px; /* Abstand zum rechten Rand */
+    width: calc(100% - 40px); /* Breite des Main-Blocks - 20px auf jeder Seite */
+}
+
+
+/* Navigation */
+nav {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 15px 0;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 20px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    background: #4a148c;
+    transition: background-color 0.3s ease;
+}
+
+h3 {
+    text-align: center;
+    font-size: 27px;
+}
+
+/* Artikel nur anzeigen, wenn sie ausgewählt sind */
+.article {
+    display: none;
+    /* Entferne die border Linie, wenn sie nicht gewünscht ist */
+    border: none; /* Oder entferne die Zeile ganz */
+}
+
+.article:target {
+    display: block;
+    text-align: center; /* Zentriert den Inhalt des Artikels */
+}
+
+.article img {
+    width: 100%;   /* Skaliert das Bild innerhalb des Containers */
+    max-width: 400px; /* Maximale Bildbreite */
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.7);
+}
+
+.article h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.article p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.article .article-link {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #4a148c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.article .article-link:hover {
+    background-color: #7226a5;
+}
+
